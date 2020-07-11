@@ -19,14 +19,13 @@ header{
     position: relative;
     height: 300px;
 }
-
 nav{
     position: absolute;
     left: 0;
     right: 0;
     background-color: #2b5043cc;
 }
-nav::after, footer::after{
+nav::after {
     content: '';
     clear: both;
     display: table;
@@ -98,6 +97,8 @@ header h1{
 }
 .main-wrapp{
     margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .sticky{
     position:-webkit-sticky; 
@@ -115,7 +116,7 @@ header h1{
 }
 main h1{
     text-align: center;
-    margin-top: 0;
+    margin-top: 5px;
 }
 main h1 span{
     color: #F2C14E;
@@ -125,19 +126,45 @@ main h1 span{
     -webkit-box-decoration-break: clone;
     -o-box-decoration-break: clone;
     box-decoration-break: clone;
-    border: 2px solid rgb(43, 80, 67);;
+    border: 2px solid rgb(43, 80, 67);
 }
-main h2{
+.article-wrapper h2{
     color: rgb(43, 80, 67);
+    padding-bottom: 2px;
+    border-bottom: 1px solid #2b5043cc;
 }
 main p{
     line-height: 2;
 }
 .article-wrapper{
+  text-align: justify;
   border-bottom: 3px solid #5fad56;
+  max-width: 350px;
+  margin-right: 20px;
 }
+.article-wrapper .details{
+    margin-top: 0px;
+}
+.article-wrapper .details a{
+    display: inline-block;
+    background: #2b5043cc;
+    padding: 5px 10px;
+    color: #F2C14E;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    border: 2px solid rgb(43, 80, 67);
+    cursor: pointer;
+}
+
 footer{
     padding: 20px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 .insta{
     background: url(../images/insta-base.png) no-repeat;
@@ -163,17 +190,13 @@ footer{
 .face:focus{
     outline: 2px solid #2b5043cc;
 }
-footer .left{
-    float: left;
-    margin-left: 50px;
-}
 footer a{
     padding: 20px;
 }
-footer .right{
-    float: right;
-    margin-right:50px;
+footer span{
+    border-top: 1px solid #1c1d21;
 }
+
 @media (min-width: 900px){
 
     html{
@@ -227,7 +250,6 @@ footer .right{
         background-color: #1c1d21;
         color: white
     }
-
     .big-menu{
         display: block;
         
@@ -238,13 +260,90 @@ footer .right{
     .small-menu{
         display: none
     }
-    main{
-        padding: 40px;
+    .main-wrapp{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     main h1{
-        margin-top: 0;
+        text-align: center;
+        margin-top: 5px;
+        display: block;
+    }
+    main h1 span{
+        color: #F2C14E;
+        padding: 0 5px;
+        background-color: rgb(43, 80, 67);
+        border-radius: 5px;
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        border: 2px solid rgb(43, 80, 67);
+    }
+    main h2{
+        color: rgb(43, 80, 67);
+        margin-top: 3rem;
     }
     main p{
         line-height: 2;
+    }
+    .article-wrapper{
+      border-bottom: 3px solid #5fad56;
+      max-width: 300px;
+    }
+    .article-wrapper .details{
+        margin-top: 0px;
+    }
+    .article-wrapper .details a{
+        display: inline-block;
+        background: #2b5043cc;
+        padding: 5px 10px;
+        color: #F2C14E;
+        text-decoration: none;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        border: 2px solid rgb(43, 80, 67);
+        cursor: pointer;
+    }
+    footer{
+        background: rgba(43, 80, 67, 0.9);
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .insta{
+        background: url(../images/insta-base.png) no-repeat;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+    }
+    .insta:hover{
+        background: url(../images/insta-hover.png) no-repeat;
+    }
+    .insta:focus{
+        outline: 2px solid #2b5043cc;
+    }
+    .face{
+        background: url(../images/face-base.png) no-repeat;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+    }
+    .face:hover{
+        background: url(../images/face-hover.png) no-repeat;
+    }
+    .face:focus{
+        outline: 2px solid #2b5043cc;
+    }
+    footer a{
+        padding: 20px;
+    }
+    footer span{
+        color: #5fad56;
+        border-top: none;
     }
 }

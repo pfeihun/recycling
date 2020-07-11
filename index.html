@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./style/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +27,8 @@
                 </ul>
                 <!--Nagy Mneu 900px-tol-->
                 <ul class="big-menu">
-                    <li><a href=""> Főoldal</a></li>
-                    <li><a href=""> Mit?</a></li>
+                    <li><a href="#"> Főoldal</a></li>
+                    <li><a href="./what.html" aria-label="Mit és hogyan?"> Mit?</a></li>
                     <li><a href=""> Hol?</a></li>
                     <li><a href=""> Vesélyes hulladék</a></li>
                     <li><a href=""> Miért?</a></li>
@@ -35,44 +36,66 @@
             </nav>
         </header>
         <main> 
+            <h1><span> Lorem Ipsum Dolor</span></h1>
+            <!--Main wrapp-->
             <div class="main-wrapp">
-                <h1><span> Lorem Ipsum Dolor</span></h1>
+                <!--Article wrapp-->
                 <article class="article-wrapper highlighted">
                     <h2>Loreem Ipsum!</h2>
+                    <div class="picture">
+                         <img src="./images/stockvault-man-holding-recycle-bin255172.png" 
+                         alt="Újrahasznosító öltönyös ember" /></div>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Debitis labore vitae consequatur velit aliquam soluta eaque corrupti eligendi. 
                         Cupiditate quaerat accusantium natus molestias quo perspiciatis dolore ratione
-                        fuga alias nobis! 
-                    <div> <img src="./images/stockvault-man-holding-recycle-bin255172.png" alt="Man-holding-recycle" /></div></p>
-                </article>
-                <article class="article-wrapper highlighted">
-                    <h2>Loreem Ipsum!</h2>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Debitis labore vitae consequatur velit aliquam soluta eaque corrupti eligendi. 
-                        Cupiditate quaerat accusantium natus molestias quo perspiciatis dolore ratione
-                        fuga alias nobis! 
-                    <div> <img src="./images/stockvault-man-holding-recycle-bin255172.png" alt="Man-holding-recycle" /></div></p>
-                </article>
-            </div>
-            <div class="sticky"><a href="#top" aria-label="Oldal tetejére">🠉</a></div>
-        </div>
-        </main>
-    
-        <footer>
-            <div class="left">&copy; Pfeiffer Zoltan 2020 
-                                <p>
-                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                        <img style="border:0;width:88px;height:31px"
-                            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                            alt="CSS ist valide!" />
-                        </a>
+                        fuga alias nobis!
                     </p>
+                    <p class="details"><a href="" aria-label="Elolvasom">Több >></a></p>
+                </article>
+                <!--/Article wrapp-->
+                <!--Article wrapp-->
+                <article class="article-wrapper">
+                    <h2>Loreem Ipsum!</h2>
+                    <div class="picture"> 
+                        <img src="./images/recycling-small.png" 
+                        alt="Újrahasznosítható szemét egy vödörben" /></div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Debitis labore vitae consequatur velit aliquam soluta eaque corrupti eligendi. 
+                        Cupiditate quaerat accusantium natus molestias quo perspiciatis dolore ratione
+                        fuga alias nobis! 
+                    </p>
+                    <p class="details"><a href="" aria-label="Elolvasom">Több >></a></p>
+                </article>
+                <!--/Article wrapp-->
+                <!--Article wrapp-->
+                <article class="article-wrapper">
+                    <h2>Loreem Ipsum!</h2>
+                    <div class="picture"> 
+                        <img src="./images/recycling-small.png" 
+                        alt="Újrahasznosítható szemét egy vödörben" /></div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Debitis labore vitae consequatur velit aliquam soluta eaque corrupti eligendi. 
+                        Cupiditate quaerat accusantium natus molestias quo perspiciatis dolore ratione
+                        fuga alias nobis!
+                    </p>
+                    <p class="details"><a href="" aria-label="Elolvasom">Több >></a></p>
+                </article>
+                <!--/Article wrapp-->
             </div>
-            <div class="right">
-
-                <a href="" class="insta"></a>
-                <a href="" class="face"></a>
-            </div>
+             <!--/Main wrapp-->
+            <div class="sticky"><a href="#top" aria-label="Oldal tetejére">🠉</a></div>
+        </main>
+        <footer>
+           <span> &copy; Pfeiffer Zoltan 2020 </span>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                 <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                 alt="CSS ist valide!" />
+                </a>
+            </p>
+            <a href="" class="insta"></a>
+            <a href="" class="face"></a> 
         </footer>
     </div>
 </body>
