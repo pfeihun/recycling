@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 20px auto;
+    outline: 2px solid #5fad56;
+}
+header{
+    background: url(../images/header.png) no-repeat;
+    background-position: -100px;
+    position: relative;
+    height: 300px;
+}
+
+nav{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(43, 80, 67, .8);
+}
+nav::after, footer::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav>ul>li{
+    float: left;
+}
+nav a{
+    color: #F2C14E;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: 0.5s;
+    transition-property: background-color;
+}
+nav a:hover{
+    background-color: #1c1d21;
+    color: white
+
+}
+.menu{
+    position: relative;
+}
+nav .menu:hover .submenu{
+    display: contents;
+    transition: 0.5s;
+}
+nav .submenu{
+    position: absolute;
+    background-color: rgba(77, 140, 120, 1);
+    width:100vw;
+    display: none;
+}
+nav .submenu a{
+    padding: 10px 5px;
+}
+nav .submenu a:hover{
+    background-color: #1c1d21;
+    color: white
+
+}
+nav .site-name{
+    margin-left: 25%;
+    color: #F2C14E;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-size: 1.4rem;
+}
+.big-menu{
+    display: none;
+}
+header h1{
+    position: absolute;
+    bottom:0;
+    right:10px;
+    color: #1c1d21;
+    text-shadow: 2px 2px 5px #5fad56;
+    margin-right:20px;
+    font-size: 2rem;
+}
+.main-wrapp{
+    margin: 40px;
+}
+.sticky{
+    position:-webkit-sticky; 
+    position:sticky; 
+    bottom:0;
+    margin-left:5px;
+}
+.sticky a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color:#f78154;
+}
+main h1{
+    text-align: center;
+    margin-top: 0;
+}
+main h1 span{
+    color: #F2C14E;
+    padding: 0 5px;
+    background-color: rgb(43, 80, 67);
+    border-radius: 5px;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    border: 2px solid rgb(43, 80, 67);;
+}
+
+main p{
+    line-height: 2;
+}
+footer{
+    padding: 20px 0;
+}
+.insta{
+    background: url(../images/insta-base.png) no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+.insta:hover{
+    background: url(../images/insta-hover.png) no-repeat;
+}
+.face{
+    background: url(../images/face-base.png) no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+.face:hover{
+    background: url(../images/face-hover.png) no-repeat;
+}
+footer .left{
+    float: left;
+    margin-left: 50px;
+}
+footer a{
+    padding: 20px;
+}
+footer .right{
+    float: right;
+    margin-right:50px;
+}
+@media (min-width: 900px){
+
+    html{
+        font-family: 'Ubuntu', sans-serif;
+    }
+    body{
+        margin:0;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .wrapper{
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+    header{
+        background: url(../images/header.png) no-repeat;
+        background-position: -100px;
+        position: relative;
+        height: 300px;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(43, 80, 67, .8);
+    }
+    nav::after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+    nav ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li{
+        float: left;
+    }
+    nav a{
+        color: #F2C14E;
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        transition: 0.5s;
+        transition-property: background-color;
+    }
+    nav a:hover{
+        background-color: #1c1d21;
+        color: white
+    }
+    .big-menu{
+        display: block;
+    }
+    header h1{
+        font-size: 3rem;
+    }
+    .small-menu{
+        display: none
+    }
+    main{
+        padding: 40px;
+    }
+    main h1{
+        margin-top: 0;
+    }
+    main p{
+        line-height: 2;
+    }
+}
