@@ -24,7 +24,7 @@ nav{
     position: absolute;
     left: 0;
     right: 0;
-    background-color: rgba(43, 80, 67, .8);
+    background-color: #2b5043cc;
 }
 nav::after, footer::after{
     content: '';
@@ -51,6 +51,9 @@ nav a:hover{
     background-color: #1c1d21;
     color: white
 
+}
+nav a:focus{
+    outline: 2px solid #F2C14E;
 }
 .menu{
     position: relative;
@@ -107,6 +110,9 @@ header h1{
     font-size: 1.8rem;
     color:#f78154;
 }
+.sticky a:hover{
+    outline: 2px solid #f78154;
+}
 main h1{
     text-align: center;
     margin-top: 0;
@@ -121,9 +127,14 @@ main h1 span{
     box-decoration-break: clone;
     border: 2px solid rgb(43, 80, 67);;
 }
-
+main h2{
+    color: rgb(43, 80, 67);
+}
 main p{
     line-height: 2;
+}
+.article-wrapper{
+  border-bottom: 3px solid #5fad56;
 }
 footer{
     padding: 20px 0;
@@ -137,6 +148,9 @@ footer{
 .insta:hover{
     background: url(../images/insta-hover.png) no-repeat;
 }
+.insta:focus{
+    outline: 2px solid #2b5043cc;
+}
 .face{
     background: url(../images/face-base.png) no-repeat;
     height: 30px;
@@ -145,6 +159,9 @@ footer{
 }
 .face:hover{
     background: url(../images/face-hover.png) no-repeat;
+}
+.face:focus{
+    outline: 2px solid #2b5043cc;
 }
 footer .left{
     float: left;
@@ -183,7 +200,7 @@ footer .right{
         top: 0;
         left: 0;
         right: 0;
-        background-color: rgba(43, 80, 67, .8);
+        background-color: #2b5043cc;
     }
     nav::after{
         content: '';
@@ -210,8 +227,10 @@ footer .right{
         background-color: #1c1d21;
         color: white
     }
+
     .big-menu{
         display: block;
+        
     }
     header h1{
         font-size: 3rem;
