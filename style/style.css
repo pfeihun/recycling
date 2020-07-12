@@ -1,3 +1,4 @@
+/*All site small*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 html{
     font-family: 'Ubuntu', sans-serif;
@@ -21,6 +22,7 @@ header{
 }
 nav{
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     background-color: #2b5043cc;
@@ -95,11 +97,6 @@ header h1{
     margin-right:20px;
     font-size: 2rem;
 }
-.main-wrapp{
-    margin: 40px;
-    display: flex;
-    flex-wrap: wrap;
-}
 .sticky{
     position:-webkit-sticky; 
     position:sticky; 
@@ -113,6 +110,54 @@ header h1{
 }
 .sticky a:hover{
     outline: 2px solid #f78154;
+}
+footer{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.insta{
+    background: url(../images/insta-base.png) no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+.insta:hover{
+    background: url(../images/insta-hover.png) no-repeat;
+}
+.insta:focus{
+    outline: 2px solid #2b5043cc;
+}
+.face{
+    background: url(../images/face-base.png) no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+.face:hover{
+    background: url(../images/face-hover.png) no-repeat;
+}
+.face:focus{
+    outline: 2px solid #2b5043cc;
+}
+footer a{
+    padding: 20px;
+}
+footer span{
+    border-top: 1px solid #1c1d21;
+}
+.css-valide img{
+    border:0;
+    width:88px;
+    height:31px
+}
+/* Site separate*/
+/*index*/
+.main-wrapp{
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 main h1{
     text-align: center;
@@ -159,97 +204,30 @@ main p{
     border: 2px solid rgb(43, 80, 67);
     cursor: pointer;
 }
+/*what*/
 
-footer{
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-.insta{
-    background: url(../images/insta-base.png) no-repeat;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-}
-.insta:hover{
-    background: url(../images/insta-hover.png) no-repeat;
-}
-.insta:focus{
-    outline: 2px solid #2b5043cc;
-}
-.face{
-    background: url(../images/face-base.png) no-repeat;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-}
-.face:hover{
-    background: url(../images/face-hover.png) no-repeat;
-}
-.face:focus{
-    outline: 2px solid #2b5043cc;
-}
-footer a{
-    padding: 20px;
-}
-footer span{
-    border-top: 1px solid #1c1d21;
-}
-
-@media (min-width: 900px){
-
-    html{
-        font-family: 'Ubuntu', sans-serif;
-    }
+/*Up to 400px*/
+@media (max-width:899px) and (min-width:400px){
+/*Test background*/
     body{
-        margin:0;
+        background-color: darkcyan;
     }
-    *{
-        box-sizing: border-box;
+/*All site*/
+    footer{
+        background: rgba(43, 80, 67, 0.9);
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
-    .wrapper{
-        max-width: 1200px;
-        margin: 20px auto;
+    footer span{
+        color: #5fad56;
+        border-top: none;
     }
-    header{
-        background: url(../images/header.png) no-repeat;
-        background-position: -100px;
-        position: relative;
-        height: 300px;
-    }
-    nav{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #2b5043cc;
-    }
-    nav::after{
-        content: '';
-        clear: both;
-        display: table;
-    }
-    nav ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    nav ul li{
-        float: left;
-    }
-    nav a{
-        color: #F2C14E;
-        text-decoration: none;
-        padding: 20px;
-        display: block;
-        transition: 0.5s;
-        transition-property: background-color;
-    }
-    nav a:hover{
-        background-color: #1c1d21;
-        color: white
-    }
+}
+/*up to 900px*/
+@media (min-width: 900px){
+/*All site big*/
     .big-menu{
         display: block;
         
@@ -260,6 +238,18 @@ footer span{
     .small-menu{
         display: none
     }
+    footer{
+        background: rgba(43, 80, 67, 0.9);
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    footer span{
+        color: #5fad56;
+        border-top: none;
+    }
+/*index big*/
     .main-wrapp{
         display: flex;
         flex-direction: row;
@@ -270,16 +260,6 @@ footer span{
         margin-top: 5px;
         display: block;
     }
-    main h1 span{
-        color: #F2C14E;
-        padding: 0 5px;
-        background-color: rgb(43, 80, 67);
-        border-radius: 5px;
-        -webkit-box-decoration-break: clone;
-        -o-box-decoration-break: clone;
-        box-decoration-break: clone;
-        border: 2px solid rgb(43, 80, 67);
-    }
     main h2{
         color: rgb(43, 80, 67);
         margin-top: 3rem;
@@ -289,7 +269,7 @@ footer span{
     }
     .article-wrapper{
       border-bottom: 3px solid #5fad56;
-      max-width: 300px;
+      max-width: 100%;
     }
     .article-wrapper .details{
         margin-top: 0px;
@@ -308,42 +288,7 @@ footer span{
         border: 2px solid rgb(43, 80, 67);
         cursor: pointer;
     }
-    footer{
-        background: rgba(43, 80, 67, 0.9);
-        padding: 20px 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .insta{
-        background: url(../images/insta-base.png) no-repeat;
-        height: 30px;
-        width: 30px;
-        display: inline-block;
-    }
-    .insta:hover{
-        background: url(../images/insta-hover.png) no-repeat;
-    }
-    .insta:focus{
-        outline: 2px solid #2b5043cc;
-    }
-    .face{
-        background: url(../images/face-base.png) no-repeat;
-        height: 30px;
-        width: 30px;
-        display: inline-block;
-    }
-    .face:hover{
-        background: url(../images/face-hover.png) no-repeat;
-    }
-    .face:focus{
-        outline: 2px solid #2b5043cc;
-    }
-    footer a{
-        padding: 20px;
-    }
-    footer span{
-        color: #5fad56;
-        border-top: none;
-    }
+/*what*/
+/*The End!*/
 }
+/*Welcome to the nowhere*/
