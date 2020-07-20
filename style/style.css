@@ -43,13 +43,15 @@ nav .nav-recycle{
     color: white;
     cursor: pointer;
  }
+ .active{
+     text-decoration: underline;
+ }
 header h1{
     position: absolute;
     bottom:0;
     right:10px;
     color: #1c1d21;
     margin-right:20px;
-    font-size: 2rem;
 }
 .main-wrapp, .what-container{
     margin: 20px 20px 20px 25px;
@@ -70,6 +72,8 @@ main h1 span{
     -o-box-decoration-break: clone;
     box-decoration-break: clone;
     border: 2px solid rgb(43, 80, 67);
+    line-height: 1.5;
+    font-size: 2rem;
 }
 main p{
     line-height: 2;
@@ -129,10 +133,8 @@ footer span{
     width:88px;
     height:31px
 }
-
 /* Site separate*/
 /*index*/
-
 .article-wrapper{
   min-width: 250px;
   display: flex;
@@ -241,6 +243,8 @@ footer span{
     color: #F2C14E;
     text-decoration: none;
     width: 100%;
+    transition: 0.5s;
+    transition-property: background-color;
 }
 .side-menu a:hover{
     background-color: #1c1d21;
@@ -257,6 +261,9 @@ footer span{
         background-color: darkcyan;
     }*/
 /*All site*/
+    main h1{
+        font-size: 3rem;
+    }
     footer{
         background: rgba(43, 80, 67, 0.9);
         padding: 20px 0;
@@ -339,8 +346,6 @@ footer span{
         display: none;
     }
 }
-
-
 /*up to 900px*/
 @media (min-width: 900px){
 /*All site big*/
