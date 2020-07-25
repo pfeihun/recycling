@@ -186,6 +186,9 @@ footer span{
 .article-content{
     height: auto;
 }
+.blog{
+    height: 390px;
+}
 .next-page{
     margin: auto;
 }
