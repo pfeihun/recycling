@@ -184,7 +184,7 @@ footer span{
     width: auto;
 }
 .article-content{
-    height: 300px;
+    height: auto;
 }
 .next-page{
     margin: auto;
@@ -226,6 +226,12 @@ footer span{
     align-content: center;
     height: auto;
 }
+.what-wrap h3{
+    margin: 15px 5px;
+}
+.what-wrap h4{
+    margin: 10px 5px;
+}
 .side-menu{
     background:  rgba(43, 80, 67, 0.8);
 }
@@ -253,6 +259,18 @@ footer span{
 .sticky-menu{
     position: sticky;
     top: 0;
+}
+/*Form*/
+.form-control:focus{
+   border-color: #2b5043;  
+}
+.custom-select:focus{
+    border-color: #2b5043;
+}
+.btn{
+    background-color: #2b5043;
+    color:#F2C14E;
+    font-size: 1.5rem;
 }
 /*Up to 500px*/
 @media (max-width:899px) and (min-width:500px){
@@ -320,6 +338,7 @@ footer span{
         overflow-x: auto;
         flex: 1;
     }
+
     .side-menu{
         background:  rgba(43, 80, 67, 0.8);
         height: 100%;
