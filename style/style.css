@@ -219,7 +219,7 @@ footer span{
     width:100%;
     height:56px;
     color: rgb(43, 80, 67);
-    padding-bottom: 2px;
+    padding: 5px 10px 2px;
     border-bottom: 1px solid #2b5043cc;
     text-align: center;
     bottom: 0;
@@ -238,13 +238,12 @@ footer span{
 .side-menu{
     background:  rgba(43, 80, 67, 0.8);
 }
-.side-menu ul li{
-    margin: 15px 0;
-}
+
 .side-menu ul{
     list-style-type: none;
     margin-left: 5px;
     padding: 10px 15px;
+    text-align: center;
 }
 .side-menu a{
     padding: 10px;
@@ -276,7 +275,7 @@ footer span{
     font-size: 1.5rem;
 }
 /*Up to 500px*/
-@media (max-width:899px) and (min-width:500px){
+@media (max-width:899px) and (min-width:550px){
 /*Test background
     body{
         background-color: darkcyan;
@@ -326,11 +325,11 @@ footer span{
     }
     .what-wrap{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
     }
     .what-wrap .picture{
         margin: 0 5px;
-        flex: 1;
         max-width: 250px;
     }
     .what-wrap .picture img{
@@ -339,7 +338,6 @@ footer span{
     }
     .what-wrap .article-content{
         overflow-x: auto;
-        flex: 1;
     }
 
     .side-menu{
